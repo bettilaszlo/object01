@@ -9,8 +9,9 @@ namespace object01
 {
     class Teglalap
  {
-        private int a, b;
-        public Teglalap(int aoldal, boldal)
+        private int a;
+        private int b;
+        public Teglalap(int aoldal boldal)
         {
             a = aoldal;
             b = boldal;
@@ -28,7 +29,7 @@ namespace object01
         }
 
     }
-    /*class Ember
+   class Ember
     {
         public string nev;
         public int eletkor;
@@ -38,15 +39,24 @@ namespace object01
             string valasz = $"{nev} vagyok {eletkor} éves.";
             return valasz;
 
-            return $"{nev} vagyok {eletkor} éves.";
+            //return $"{nev} vagyok {eletkor} éves.";
         }
-    }
+   
     
      class Kor
     {
         private int r;
         public Kor(int sugar)
         {
+        
+            if (sugar < 1)
+            {
+                r = 1;
+            }
+            else
+            {
+
+            }
             r = sugar;
         }
 
@@ -62,12 +72,16 @@ namespace object01
        
 
 
-    }*/
+    }
+        public void AdatokKiirasa()
+        {
+
+        }
     class Program
     {
         static void Main(string[] args)
         {
-            /*Ember pisti = new Ember();
+            Ember pisti = new Ember();
             Ember eva = new Ember();
 
             pisti.nev = "Nagy Pisti";
@@ -83,12 +97,12 @@ namespace object01
             Console.WriteLine(eva.Bemutatkozas());
             
              
-            Teglalap adat1 = new Teglalap();
+           /* Teglalap adat1 = new Teglalap();
             adat1.a = 3;
             adat1.b = 4;
 
             Console.WriteLine("Kerület: {0} ", adat1.Kerulet());
-            Console.WriteLine("Terület: {0} ", adat1.Terulet());
+            Console.WriteLine("Terület: {0} ", adat1.Terulet());*/
 
 
 
@@ -97,7 +111,7 @@ namespace object01
             Kor adatok = new Kor(sugar);
 
             Console.WriteLine("Kerület: {0} ", adatok.Kerulet2());
-            Console.WriteLine("Terület: {0} ", adatok.Terulet2());*/
+            Console.WriteLine("Terület: {0} ", adatok.Terulet2());
 
 
 
